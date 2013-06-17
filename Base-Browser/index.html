@@ -1,30 +1,60 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <title>Hello World</title>
- 
-    <!-- CSS for presentation. -->
-    <style>
-    h1 { font-size: 14px; color: hotpink; }
-    button { color: red; }
-    </style>
-</head>
-<body>
-    <h1>Hello World</h1>
-    <button>Click Me!</button>
- 
-    <!-- JavaScript for interactivity. -->
-    <script>
- 
-    // Get a handle on the first button element in the document.
-    var button = document.querySelector( "button" );
- 
-    // If a user clicks on it, say hello!
-    button.addEventListener( "click", function( ev ) {
-        alert( "Hello" );
-    }, false);
- 
-    </script>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Ceylon Base Browser Demo</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--[if lt IE 9]>
+        <p>
+            Your browser is <em>ancient!</em> 
+            <a href="http://browsehappy.com/">
+                Upgrade to a different browser
+            </a>
+            to experience this site.
+        </p>
+        <![endif]-->
+
+        <script type="text/javascript" src="/components/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="/components/bootstrap/docs/assets/js/bootstrap.min.js"></script>
+        
+
+        <link rel="stylesheet" type="text/css" href="/styles/main-responsive.css">
+        
+        <script type="text/javascript">
+        $(function() {
+            
+        });
+        </script>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="container">
+                <div class="row">
+                    <header class="span16">
+                        <nav class="navbar" id="navbar">
+                            <div class="navbar">
+                                <div class="navbar-inner">
+                                    <a class="brand" href="#">{{ brand }}</a>
+                                </div>
+                            </div>
+                        </nav>
+                    </header>               
+                </div>
+                <div class="row">
+                    <section class="content span16">
+                            content
+                    </section>
+                </div>
+                <div class="row">
+                    <footer class="span16">
+                        <p>Copyright <a href="http://www.openswimsoftware.com">Corbin Uselton</a> 2013</p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
