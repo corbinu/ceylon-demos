@@ -18,42 +18,31 @@
         </p>
         <![endif]-->
 
-        <script type="text/javascript" src="/components/jquery/jquery.min.js"></script>
-        <script type="text/javascript" src="/components/bootstrap/docs/assets/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="node_modules/jquery2/jquery-2.0.2.js"></script>
+        <script type="text/javascript" src="node_modules/twitter-bootstrap/docs/assets/js/bootstrap.min.js"></script>
+        <script src="bundle.js"></script>
         
-
-        <link rel="stylesheet" type="text/css" href="/styles/main-responsive.css">
+        <link rel="stylesheet" type="text/css" href="node_modules/twitter-bootstrap/docs/assets/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="node_modules/twitter-bootstrap/docs/assets/css/bootstrap-responsive.css">
+        <link rel="stylesheet" type="text/css" href="main.css">
         
-        <script type="text/javascript">
-        $(function() {
-            
-        });
-        </script>
     </head>
     <body>
-        <div class="wrap">
-            <div class="container">
-                <div class="row">
-                    <header class="span16">
-                        <nav class="navbar" id="navbar">
-                            <div class="navbar">
-                                <div class="navbar-inner">
-                                    <a class="brand" href="#">{{ brand }}</a>
-                                </div>
-                            </div>
-                        </nav>
-                    </header>               
-                </div>
-                <div class="row">
-                    <section class="content span16">
-                            content
-                    </section>
-                </div>
-                <div class="row">
-                    <footer class="span16">
-                        <p>Copyright <a href="http://www.openswimsoftware.com">Corbin Uselton</a> 2013</p>
-                    </footer>
-                </div>
+        <header class="navbar navbar-inverse navbar-fixed-top">
+            <nav class="navbar-inner">
+                <a class="brand" href="#">Ceylon Demo</a>
+            </nav>   
+        </header>
+        <div class="content">
+            <div class="row">
+                <section class="content span16">
+                    content
+                </section>
+            </div>
+            <div class="row">
+                <footer class="span16">
+                    <p>Build by <a href="http://celyonjsvm.wordpress.com">Corbin Uselton</a> 2013</p>
+                </footer>
             </div>
         </div>
     </body>
