@@ -1,2 +1,4 @@
 To build run:
 	$CEYLON_HOME/bin/ceylon compile-js source/ceylon/examples/basic/node/*.ceylon
+	rm -r node_modules/ceylon/examples
+	cp -r modules/ceylon/examples node_modules/ceylon/examples
