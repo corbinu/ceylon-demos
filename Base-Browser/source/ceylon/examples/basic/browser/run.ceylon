@@ -2,7 +2,6 @@
 
 shared void init() {
     dynamic {
-        value jquery = require("jquery");
-        jquery(".main").text("Text changed by ceylon");
+		jQuery(".main").text("Text changed by ceylon");
     }
 }

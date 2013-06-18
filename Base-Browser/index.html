@@ -28,6 +28,9 @@
                 //You could point this to your local copy of the js language module
                 'ceylon/language/0.6/ceylon.language-0.6':'../assets/js/ceylon.language-0.6',
                 'jquery': 'http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min'
+            },
+            shim: {
+                "ceylon/examples/basic/browser/1.0.0/ceylon.examples.basic.browser-1.0.0": ["jquery"]
             }
         });
         $(function() {
