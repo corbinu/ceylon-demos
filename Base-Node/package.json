@@ -1,0 +1,9 @@
+{
+  "name": "ceylon-example-node",
+  "description": "Basic example of using ceylon on node",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "3.x"
+  }
+}
