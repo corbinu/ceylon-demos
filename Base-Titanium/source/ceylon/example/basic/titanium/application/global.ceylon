@@ -20,10 +20,10 @@ class Device() {
 
 	shared void load() {
 		dynamic {
-			osname = Ti.Platform.osname;
-			version = Ti.Platform.version;
-			height = Ti.Platform.displayCaps.platformHeight;
-			width = Ti.Platform.displayCaps.platformWidth;
+			osname = Ti.\iPlatform.osname;
+			version = Ti.\iPlatform.version;
+			height = Ti.\iPlatform.displayCaps.platformHeight;
+			width = Ti.\iPlatform.displayCaps.platformWidth;
 		}
 
 		if (isIOS()) {
@@ -73,13 +73,13 @@ class Device() {
 		if (type == "unknown")
 		{
 			dynamic {
-				Ti.API.info("Could not determine device type");
+				Ti.\iAPI.info("Could not determine device type");
 			}
 		}
 		else
 		{
 			dynamic {
-				Ti.API.info("Device type general " + type + " specifically " + typeGeneral);
+				Ti.\iAPI.info("Device type general " + type + " specifically " + typeGeneral);
 			}
 		}
 	}

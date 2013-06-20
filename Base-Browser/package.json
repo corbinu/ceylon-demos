@@ -1,5 +1,5 @@
 {
-    "name": "ceylon-node-example",
+    "name": "ceylon-browser-compiler",
     "version": "0.1.0",
     "description": "scripts for coding Browser apps in Ceylon",
     "author": "Corbin Uselton <CorbinU@OpenSwimSoftware.com>",
@@ -7,8 +7,7 @@
     "homepage": "http://ceylonjsvm.wordpress.com",
     "private": true,
     "dependencies" : {
-        "grunt": "0.4.1",
-        "express": "3.x"
+        "grunt": "0.4.1"
     },
     "license": "MIT",
     "engines": {
