@@ -1,5 +1,5 @@
 "Run the module `ceylon.examples.basic.titanium`."
-void run() {
+shared void run() {
     dynamic {
         if (Ti.version < 3.1)
 		{
