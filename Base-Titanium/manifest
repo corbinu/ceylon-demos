@@ -1,9 +1,0 @@
-#appname:Base-Titanium
-#appid:com.wordpress.ceylonjsvm.ceylonbase
-#type:mobile
-#guid:aa7800ad-0bdd-4655-959d-e2645966766e
-#version:1.0
-#publisher:corbinu
-#url:http://ceylonjsvm.wordpress.com
-#image:appicon.png
-#desc:Example of using Ceylon to write a mobile app
