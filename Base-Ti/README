@@ -1,4 +1,4 @@
 To build run:
-	$CEYLON_HOME/bin/ceylon compile-js source/ceylon/example/basic/titanium/*.ceylon
+	$CEYLON_HOME/bin/ceylon compile-js source/ceylon/examples/basic/titanium/*.ceylon
 	rm -r Resources/ceylon/examples
-	cp -r modules/ceylon/example Resources/ceylon/examples
+	cp -r modules/ceylon/examples Resources/ceylon/examples

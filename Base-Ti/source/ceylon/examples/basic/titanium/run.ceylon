@@ -1,4 +1,4 @@
-"Run the module `ceylon.example.basic.titanium`."
+"Run the module `ceylon.examples.basic.titanium`."
 void run() {
     dynamic {
         if (Ti.version < 3.1)
