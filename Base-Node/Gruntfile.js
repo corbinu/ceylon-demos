@@ -3,29 +3,25 @@ module.exports = function(grunt) {
 
 	// Project configuration.
 	grunt.initConfig({
-		/*clean: {
-			resources: [
-				'Resources',
-				'tmp',
-			],
+		clean: {
 			build: [
-				'build'
+				'node_modules/ceylon/examples'
 			]
 		},
 		copy: {
 			build: {
 				files: [
-					{expand: true, src: ['**'], cwd: 'src/iOS/', dest: 'build-ts/'}
+					{expand: true, src: ['**'], cwd: 'modules/ceylon/examples/', dest: 'node_modules/ceylon/examples/'}
 				]
 			}
-		}*/
+		}
 	});
 
 	grunt.registerTask('build', 'Build the browser files', function() 
 	{
 		var exec = require('child_process').exec;
 
-		var compile = exec('$CEYLON_HOME/bin/ceylon compile-js source/ceylon/examples/basic/browser/*.ceylon', function (error, stdout, stderr) 
+		var compile = exec('$CEYLON_HOME/bin/ceylon compile-js source/ceylon/examples/basic/node/*.ceylon', function (error, stdout, stderr) 
 		{
 			console.log('stdout: ' + stdout);
 			console.log('stderr: ' + stderr);
@@ -39,6 +35,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 
-	grunt.registerTask('default', ['build']);
+	grunt.registerTask('default', ['clean:build', 'build', 'copy:build']);
 
 };

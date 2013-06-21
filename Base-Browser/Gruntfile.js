@@ -1,10 +1,6 @@
 /*global module:false*/
 module.exports = function(grunt) {
 
-	// Project configuration.
-	grunt.initConfig({
-	});
-
 	grunt.registerTask('build', 'Build the browser files', function() 
 	{
 		var exec = require('child_process').exec;

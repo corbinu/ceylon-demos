@@ -1,5 +1,5 @@
 {
-    "name": "ceylon-browser-compiler",
+    "name": "ceylon-browser-demo",
     "version": "0.1.0",
     "description": "scripts for coding Browser apps in Ceylon",
     "author": "Corbin Uselton <CorbinU@OpenSwimSoftware.com>",
